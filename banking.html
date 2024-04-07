@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Information</title>
+</head>
+<body>
+    <h1>Banking Information</h1>
+
+    <h2>Savings Account</h2>
+    <p>Account Number: {{ savings_acc.account_number }}</p>
+    <p>Balance: {{ savings_acc.balance }}</p>
+    <p>Interest Rate: {{ savings_acc.interest_rate }}%</p>
+    
+    
+
+    <h2>Checking Account</h2>
+    <p>Account Number: {{ checking_acc.account_number }}</p>
+    <p>Balance: {{ checking_acc.balance }}</p>
+    <p>Overdraft Limit: {{ checking_acc.overdraft_limit }}</p>
+    
+    
+</body>
+</html>

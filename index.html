@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Information Form</title>
+    <style>
+        body {
+            background-color: #007bff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(15, 185, 41, 0.1);
+            padding: 20px;
+            max-width: 900px;
+            background-color: #a131a3c6;
+        }
+
+        .card-header h1 {
+            margin: 2px;
+        }
+
+        .form-group {
+            margin-bottom: 6px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 88%;
+            padding: 10px 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            margin-top: 4px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 6%;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h1>Banking Information Form</h1>
+        </div>
+        <div class="card-body">
+            <form action="/" method="post">
+                <h2>Savings Account</h2>
+                <div class="form-group">
+                    <label for="savings_acc_number">Account Number:</label>
+                    <input type="text" id="savings_acc_number" name="savings_acc_number" required>
+                </div>
+                <div class="form-group">
+                    <label for="savings_acc_balance">Balance:</label>
+                    <input type="number" id="savings_acc_balance" name="savings_acc_balance" required>
+                </div>
+                <div class="form-group">
+                    <label for="savings_acc_interest_rate">Interest Rate (%):</label>
+                    <input type="number" id="savings_acc_interest_rate" name="savings_acc_interest_rate" step="0.01" required>
+                </div>
+
+                <h2>Checking Account</h2>
+                <div class="form-group">
+                    <label for="checking_acc_number">Account Number:</label>
+                    <input type="text" id="checking_acc_number" name="checking_acc_number" required>
+                </div>
+                <div class="form-group">
+                    <label for="checking_acc_balance">Balance:</label>
+                    <input type="number" id="checking_acc_balance" name="checking_acc_balance" required>
+                </div>
+                <div class="form-group">
+                    <label for="checking_acc_overdraft_limit">Overdraft Limit:</label>
+                    <input type="number" id="checking_acc_overdraft_limit" name="checking_acc_overdraft_limit" required>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- Message section to display transaction status -->
+
+        </div>
+    </div>
+</body>
+</html>
